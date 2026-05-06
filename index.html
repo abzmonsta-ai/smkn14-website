@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SMKN 14 Samarinda</title>
 
 <style>
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-besar {
+  width: 70px;
+}
+
+.logo-kecil {
+  width: 40px;
+}
+
+.logo-container h2 {
+  margin: 0;
+}
+</style>
+
+</head>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -76,18 +94,11 @@ footer {
 
 <!-- Navbar -->
 <nav>
-  <div style="display:flex;align-items:center;gap:10px;">
-    
-    <!-- Logo Sekolah -->
-    <img src="logo sekolah.png" width="100">
-    
-    <!-- Logo Provinsi -->
-    <img src="logo kaltim.png" width="40">
-
-    <!-- Nama Sekolah -->
-    <h2>SMKN 14 Samarinda</h2>
-
-  </div>
+  <div class="logo-container">
+  <img src="logo-sekolah.png" class="logo-besar">
+  <img src="logo-kaltim.png" class="logo-kecil">
+  <h2>SMKN 14 Samarinda</h2>
+</div>
 
   <ul>
     <li><a href="#home">Home</a></li>
