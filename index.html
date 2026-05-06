@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMKN 14 Samarinda</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #0a7a3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* Slider */
+.slider {
+    height: 300px;
+    background: #0a7a3f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    font-size: 30px;
+}
+
+.active {
+    display: block;
+}
+
+/* Section */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.jurusan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>SMKN 14 Samarinda</h2>
+    <ul>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Jurusan</li>
+        <li>Kontak</li>
+    </ul>
+</nav>
+
+<!-- Slider -->
+<div class="slider">
+    <div class="slide active">WELCOME TO SMKN 14 SAMARINDA</div>
+    <div class="slide">BerTAKWA</div>
+    <div class="slide">Siap Kerja & Wirausaha</div>
+</div>
+
+<!-- Visi -->
+<div class="section">
+    <h2>Visi</h2>
+    <p>Berkarakter profil pelajar Pancasila, kompeten, serta mampu mengisi peluang di wilayah penyangga IKN.</p>
+</div>
+
+<!-- Misi -->
+<div class="section">
+    <h2>Misi</h2>
+    <p>Menyelenggarakan pembelajaran berkualitas, berbasis project, dan kerjasama dengan industri.</p>
+</div>
+
+<!-- Jurusan -->
+<div class="section">
+    <h2>Jurusan</h2>
+    <div class="jurusan">
+        <div class="card">TJKT</div>
+        <div class="card">DKV</div>
+        <div class="card">AKL</div>
+        <div class="card">Pemasaran</div>
+        <div class="card">MPLB</div>
+        <div class="card">DPB</div>
+    </div>
+</div>
+
+<!-- Berita -->
+<div class="section">
+    <h2>Berita Kegiatan</h2>
+    <p><a href="https://www.instagram.com/p/DXyMcnckw2i/">Antartika Vol.2</a></p>
+    <p><a href="https://www.instagram.com/p/DXg2UWvk8Cn/">Hari Kartini</a></p>
+    <p><a href="https://www.instagram.com/p/DXg8eDKE4W_/">HUT Pabels</a></p>
+</div>
+
+<!-- Kontak -->
+<div class="section">
+    <h2>Kontak</h2>
+    <p>Jl. H.A.M.M. Rifaddin, Samarinda</p>
+    <p>Telp: (0541) 4114936</p>
+    <p>Email: smkn14smd@gmail.com</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© SMKN 14 Samarinda</p>
+</footer>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>
