@@ -1,112 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<title>SMKN 14 Samarinda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Negeri 14 Samarinda - BerTAKWA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-smk-green { background-color: #166534; } /* Hijau SMKN 14 */
+        .text-smk-green { color: #166534; }
+        .hero-gradient { background: linear-gradient(135deg, #166534 0%, #22c55e 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
 
-<style>
-.logo-container {
-  display: flex;
-  align-items: center; /* bikin sejajar tengah */
-  gap: 12px;
-}
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 text-white text-xs py-2 px-6 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between">
+            <div class="flex gap-4">
+                <span><i class="fas fa-phone mr-2"></i> (0541) 4114936</span>
+                <span><i class="fas fa-envelope mr-2"></i> smkn14smd@gmail.com</span>
+            </div>
+            <div>NPSN: 30404273 | Akreditasi B (Nilai 90)</div>
+        </div>
+    </div>
 
-.logo-besar {
-  width: 5px;   
-  height: auto;
-}
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-smk-green p-2 rounded-lg text-white">
+                    <i class="fas fa-school text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-none text-slate-900">SMK NEGERI 14</h1>
+                    <p class="text-[10px] font-bold text-smk-green tracking-[0.2em]">SAMARINDA</p>
+                </div>
+            </div>
+            <div class="hidden lg:flex gap-8 font-medium text-sm">
+                <a href="#home" class="hover:text-smk-green transition">Beranda</a>
+                <a href="#profil" class="hover:text-smk-green transition">Profil</a>
+                <a href="#organisasi" class="hover:text-smk-green transition">Struktur</a>
+                <a href="#jurusan" class="hover:text-smk-green transition">Jurusan</a>
+                <a href="#kontak" class="hover:text-smk-green transition">Kontak</a>
+            </div>
+            <a href="#spmb" class="bg-smk-green text-white px-5 py-2 rounded-full font-semibold hover:bg-green-800 transition shadow-lg shadow-green-200 text-sm">
+                SPMB 2026
+            </a>
+        </div>
+    </nav>
 
-.logo-kecil {
-  width: 10px;
-  height: auto;
-}
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-widest">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-ping mr-2"></span>
+                    Menuju Penyangga IKN
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                    Mewujudkan Generasi <span class="text-smk-green">BerTAKWA.</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Beriman, Tanggung Jawab, Adaptif, Kolaboratif, Wirausaha. SMK Negeri 14 Samarinda siap mencetak tenaga kerja kompeten untuk masa depan Indonesia.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#profil" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition">Profil Sekolah</a>
+                    <a href="#jurusan" class="border-2 border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">Program Keahlian</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-green-200 rounded-full filter blur-3xl opacity-40"></div>
+                <!-- Image Placeholder for School Front -->
+                <div class="relative bg-slate-200 aspect-[16/10] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=1000&auto=format&fit=crop" alt="Gerbang SMK Negeri 14 Samarinda" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                        <p class="text-white font-medium italic">"Kampus Hijau di Perbukitan Loa Janan Ilir"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.logo-container h2 {
-  margin: 0;
-  font-size: 20px;
-}
-  
-nav {
-  background: #0a7a3f; /* warna hijau */
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-  
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Navbar */
-nav {
-    background: #0a7a3f;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-/* Slider */
-.slider {
-    height: 300px;
-    background: #0a7a3f;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide {
-    display: none;
-    font-size: 30px;
-}
-
-.active {
-    display: block;
-}
-
-/* Section */
-.section {
-    padding: 40px;
-    text-align: center;
-}
-
-.jurusan {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Footer */
+    <!/* Footer */
 footer {
     background: #222;
     color: white;
